@@ -18,7 +18,7 @@
 - 替班审批
 - 服务时长
 
-`contracts/context.schema.json` 描述资料结构，`fixtures/context.json` 提供不含真实身份信息的示例，`src/volunteer_context.py` 负责读取和校验这些资料。
+`contracts/context.schema.json` 描述资料结构，`fixtures/context.json` 提供不含真实身份信息的示例，`src/volunteer_context.py` 负责读取和校验这些资料，`src/roster.py` 在同一条记录链上编排排班、签到、替班、安排取消与表彰，系统恢复后重放记录链即可续办，并能解释一份表彰为何包含或排除某段服务。
 
 ## 开发命令
 
